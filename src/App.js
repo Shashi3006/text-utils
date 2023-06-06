@@ -27,13 +27,6 @@ function App() {
       document.body.style.backgroundColor = "#042743";
       showAlert("Dark mode has enabled", "success");
       document.title = "TextUtils - Dark mode";
-      //Used to blink/flash the title again n again just to grab the attention of the viewer
-      // setInterval(() => {
-      //   document.title='TextUtils is Amazing';
-      // }, 1000);
-      // setInterval(() => {
-      //   document.title='Install TextUtils Now';
-      // }, 1500);
     } else {
       setMode("light");
       document.body.style.backgroundColor = "#ebebe0";
@@ -44,7 +37,6 @@ function App() {
 
   return (
     <>
-      {/* <Navbar title="TextUtils" aboutTitle="about textUtils" />  */}
       <Router>
         <Navbar
           title="TextUtils"
